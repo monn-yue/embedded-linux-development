@@ -85,8 +85,76 @@ Failed to start Set console font and keymap.
 
 以上问题暂未深入排查。
 
-### 5. 后续待完成
+### 5. 官方镜像与恢复资料
 
-- 保存官方 Debian 11 镜像来源及校验信息
-- 整理 RKDevTool 烧录工具与恢复教程
-- W10 完成自主重刷和环境恢复验证
+#### 5.1 官方系统镜像
+
+开发板：KICKPI K11C V1.2
+
+系统版本：Debian 11
+
+镜像类型：Multi
+
+镜像文件：
+update-rk3566-kickpi-k11c-v12-linux-debian-multi-20260730-161405.img
+
+Windows 保存位置：
+F:\K11C\images
+
+镜像大小：
+4264809034 字节
+
+SHA256：
+已计算并保存至 F:\K11C\images\image-checksum.txt
+
+说明：
+镜像已下载完成。
+已计算本地 SHA256，但尚未与官方校验值比对。
+
+#### 5.2 烧录工具
+
+已准备以下工具：
+
+- RKDevTool
+- DriverAssistant
+
+Windows 保存目录：
+F:\K11C\tools
+
+工具已下载并解压。
+
+当前尚未执行重新烧录操作。
+
+#### 5.3 eMMC 恢复计划
+
+计划在 W10 完成自主重刷及恢复验证。
+
+预计操作流程：
+
+1. 备份开发板重要代码和配置。
+2. 检查镜像 SHA256。
+3. 准备 RKDevTool 和 USB 驱动。
+4. 按照官方教程进入烧录模式。
+5. 使用匹配的镜像烧录 eMMC。
+6. 重启开发板并检查 Debian 11 系统。
+7. 验证 SSH、串口和项目功能。
+
+以上为计划流程，尚未实际执行。
+
+#### 5.4 W1 最终结论
+
+KICKPI K11C V1.2 已成功运行 Debian 11。
+
+已完成以下验证：
+
+- Ubuntu 主机开发环境正常。
+- K11C 系统和硬件信息核验通过。
+- SSH 登录成功。
+- USB-TTL 串口通信成功。
+- 官方 Debian 11 镜像已下载并保存校验信息。
+- RKDevTool 和 DriverAssistant 已准备完成。
+- Git 项目及工程文档已建立。
+
+W1 的核心部署与验证任务已完成。
+
+实际系统重刷与恢复验证保留至 W10。
