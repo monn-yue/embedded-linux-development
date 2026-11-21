@@ -60,5 +60,11 @@ Source Code:
 
 W1 and W2 completed and verified.
 
-Next milestone: W3 - GPIO, libgpiod,
-device tree basics and ARM64 cross-compilation.
+### W3 · GPIO and ARM64 Cross-Compilation
+
+- Verified GPIO output on the K11C. The external LED stayed on for about five seconds, then turned off.
+- Tested GPIO input with a jumper wire as a simulated button. Pin 28 read `0` with the jumper disconnected and `1` with the voltage divider powered.
+- Cross-compiled a C program on Ubuntu and ran it on the K11C. It printed `Hello, ARM64!` and exited with code `0`.
+- Completed C exercises on memory layout, `malloc` and `free`, structures, and ARM32 versus ARM64 type sizes.
+
+[W3 lab notes and reproduction steps](docs/w3-summary.md)
