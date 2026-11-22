@@ -56,11 +56,7 @@ Documentation:
 Source Code:
 - [W2 C Practice](src/w2/main.c)
 
-## Current Status
-
-W1 and W2 completed and verified.
-
-### W3 · GPIO and ARM64 Cross-Compilation
+### W3 - GPIO and ARM64 Cross-Compilation [Completed]
 
 - Verified GPIO output on the K11C. The external LED stayed on for about five seconds, then turned off.
 - Tested GPIO input with a jumper wire as a simulated button. Pin 28 read `0` with the jumper disconnected and `1` with the voltage divider powered.
@@ -68,3 +64,17 @@ W1 and W2 completed and verified.
 - Completed C exercises on memory layout, `malloc` and `free`, structures, and ARM32 versus ARM64 type sizes.
 
 [W3 lab notes and reproduction steps](docs/w3-summary.md)
+
+### W4 - IMU Six-Axis Acquisition [Completed]
+
+- Connected the ICM-45688-P to the K11C over I2C3 at address `0x69`.
+- Verified the chip identity by reading `0xe7` from `WHO_AM_I`.
+- Read raw three-axis acceleration and angular velocity, and verified the response to tilt and rotation.
+
+Documentation:
+- [W4 Summary](docs/w4-summary.md)
+
+## Current Status
+
+W1 through W4 are complete and verified.
+Next: implement six-axis IMU acquisition in C++17 and build it with CMake.
