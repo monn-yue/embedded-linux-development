@@ -1,0 +1,13 @@
+board = KICKPI K11C V1.2
+w5_reference_commit = 7d8a20e
+run_at = 2026-11-22T15:32:24+00:00
+debian = 11.8
+kernel = 5.10.160
+arch = aarch64
+Python 3.9.2
+normal = PASS
+samples = 3
+timestamps_increase = True
+injected_timeout = PASS
+timeout_exit = 1
+overall = PASS
