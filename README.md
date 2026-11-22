@@ -74,7 +74,19 @@ Source Code:
 Documentation:
 - [W4 Summary](docs/w4-summary.md)
 
+### W5 - C++17 IMU Acquisition [Completed]
+
+- Cross-compiled `imu-read` with CMake and ran it on the K11C (ARM64).
+- Verified continuous six-axis sampling and CSV output with elapsed timestamps.
+- Injected an I2C read timeout, verified the error message and exit code, and confirmed sampling worked on the next run.
+
+Documentation:
+- [W5 Summary and Reproduction Steps](docs/w5-summary.md)
+
+Source Code:
+- [IMU Acquisition](src/imu/)
+
 ## Current Status
 
-W1 through W4 are complete and verified.
-Next: implement six-axis IMU acquisition in C++17 and build it with CMake.
+W1 through W5 are complete and verified.
+Next: automate the IMU validation in Python.
