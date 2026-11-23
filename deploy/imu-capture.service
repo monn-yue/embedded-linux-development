@@ -1,0 +1,13 @@
+[Unit]
+Description=IMU capture on KICKPI K11C
+
+[Service]
+Type=simple
+User=linaro
+SupplementaryGroups=i2c
+ExecStart=/usr/bin/stdbuf -oL /home/linaro/imu-read 36001 --csv
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
