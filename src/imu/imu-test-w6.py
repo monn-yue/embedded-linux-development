@@ -55,3 +55,4 @@ print("timeout_exit =", timeout_result.returncode)
 
 overall_pass = normal_pass and timeout_pass
 print("overall =", "PASS" if overall_pass else "FAIL")
+raise SystemExit(0 if overall_pass else 1)

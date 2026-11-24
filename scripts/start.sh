@@ -37,7 +37,6 @@ fi
 echo "目标开发板：$REMOTE" >&2
 echo "采样数量：$SAMPLE_COUNT" >&2
 
-echo ""
 echo "========== 检查 SSH 连接 ==========" >&2
 
 ssh -o BatchMode=yes -o ConnectTimeout=5 "$REMOTE" \
@@ -48,11 +47,9 @@ ssh -o BatchMode=yes -o ConnectTimeout=5 "$REMOTE" \
 
 echo "SSH 和程序检查通过" >&2
 
-echo ""
 echo "========== 启动 IMU 采集 ==========" >&2
 
 ssh -o BatchMode=yes "$REMOTE" \
     "exec '$REMOTE_FILE' '$SAMPLE_COUNT' --csv"
 
-echo ""
 echo "START PASS" >&2

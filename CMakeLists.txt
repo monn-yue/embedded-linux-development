@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(embedded_linux_anker LANGUAGES CXX)
+project(embedded_linux_development LANGUAGES CXX)
 
 find_package(Threads REQUIRED)
 
