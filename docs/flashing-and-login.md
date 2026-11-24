@@ -82,14 +82,14 @@ Failed to start Set console font and keymap.
 镜像文件：
 update-rk3566-kickpi-k11c-v12-linux-debian-multi-20260730-161405.img
 
-Windows 保存位置：
-F:\K11C\images
+Windows 本地镜像目录：
+`K11C\images`（实际盘符因设备配置而异）
 
 镜像大小：
 4264809034 字节
 
 SHA256：
-已计算并保存至 F:\K11C\images\image-checksum.txt
+已计算并保存至镜像目录中的 `image-checksum.txt`
 
 说明：
 镜像已下载完成。
@@ -102,8 +102,8 @@ SHA256：
 - RKDevTool
 - DriverAssistant
 
-Windows 保存目录：
-F:\K11C\tools
+Windows 本地工具目录：
+`K11C\tools`（实际盘符因设备配置而异）
 
 烧录工具已下载并解压，尚未执行重新烧录。
 
