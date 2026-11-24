@@ -1,25 +1,8 @@
 # K11C 烧录与登录记录 v1
 
-## 硬件
-- KICKPI K11C
-- RK3566
-- 4GB RAM / 32GB eMMC
-
-## 系统
-- 目标系统：Debian 11
-- 电脑开发环境：Ubuntu 24.04
-- 预装系统：待实机验证
-
 ## 官方资料
 - https://doc.kickpi.cn/Products/Introduction/KICKPI-K11C/
 - https://doc.kickpi.cn/Products/Beginner-Guide/KICKPI-K11C/
-
-## 部署计划
-1. 到货后检查 PCB 版本及硬件。
-2. 启动预装系统并核对版本。
-3. 验证串口登录。
-4. 配置网络并验证 SSH。
-5. 保存官方镜像和恢复流程，W10 验证重刷。
 
 ## 实机验证记录
 
@@ -83,7 +66,8 @@ Failed to start Set console font and keymap.
 
 目前系统能够正常启动，SSH 与串口均可正常使用。
 
-以上问题暂未深入排查。
+启动日志中的问题尚未进一步排查。
+
 
 ### 5. 官方镜像与恢复资料
 
@@ -109,7 +93,7 @@ SHA256：
 
 说明：
 镜像已下载完成。
-已计算本地 SHA256，但尚未与官方校验值比对。
+已计算本地 SHA256，未与官方校验值比对。
 
 #### 5.2 烧录工具
 
@@ -121,9 +105,8 @@ SHA256：
 Windows 保存目录：
 F:\K11C\tools
 
-工具已下载并解压。
+烧录工具已下载并解压，尚未执行重新烧录。
 
-当前尚未执行重新烧录操作。
 
 #### 5.3 eMMC 恢复计划
 
