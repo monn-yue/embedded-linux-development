@@ -4,7 +4,7 @@
 
 - 目标板 KICKPI K11C V1.2，ICM-45688-P，I²C 设备 `/dev/i2c-3`
 - Debian 11.8，Linux 5.10.160，aarch64，Python 3.9.2
-- W5 采集程序的源码参考提交 `7d8a20e`
+- W5 采集程序的源码参考提交 `a7b63a0`
 - 板上记录时间 `2026-11-22T15:32:24+00:00`
 - [板上运行原始输出](w6-imu-test-output.txt)
 

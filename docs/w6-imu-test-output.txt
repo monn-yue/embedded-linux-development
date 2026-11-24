@@ -1,5 +1,5 @@
 board = KICKPI K11C V1.2
-w5_reference_commit = 7d8a20e
+w5_reference_commit = a7b63a0
 run_at = 2026-11-22T15:32:24+00:00
 debian = 11.8
 kernel = 5.10.160

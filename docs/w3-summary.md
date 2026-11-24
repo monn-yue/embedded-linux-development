@@ -86,7 +86,7 @@ uname -m
 echo "exit=$?"
 ```
 
-板上架构为 `aarch64`，程序打印 `Hello, ARM64!` 并以 `exit=0` 正常退出。对应的源码提交为 `36f67c6`。
+板上架构为 `aarch64`，程序打印 `Hello, ARM64!` 并以 `exit=0` 正常退出。对应的源码提交为 `3694300`。
 
 ## C 基础复习
 
@@ -97,7 +97,7 @@ echo "exit=$?"
 | [结构体](../src/w3/struct_demo.c) | 在 Ubuntu x86_64 上，结构体大小为 8 字节，`level` 成员的偏移为 4 字节。 |
 | ARM32 与 ARM64 类型大小 | ARM64 编译器给出的 `int`、指针和 `long` 大小分别为 4、8、8 字节。常见 ARM32 Linux 下这三种类型各为 4 字节。 [Arm ABI](https://github.com/ARM-software/abi-aa) |
 
-三份 C 练习的源码提交为 `44d7103`。
+三份 C 练习的源码提交为 `7e04a64`。
 
 ## 本周排障记录
 
